@@ -13,15 +13,15 @@
   max-width: 10rem;
 }
 
-.player-list {
-  width: 50%;
-}
-
-.book-box {
-  width: 50%;
+.one-third-width {
+  width: 33%;
 }
 
 .ask-box {
   justify-content: space-around;
+}
 
+.current-player-box {
+  justify-content: center;
+  width: 33%;
 }

@@ -45,8 +45,8 @@ $button_varieties: 'primary', 'secondary', 'tertiary';
   .btn--#{$color} {
     @extend %btn;
 
-    background: var(--rm-color-#{$color}-minus-1);
-    color: var(--rm-color-#{$color}-on-minus-1);
+    background: var(--rm-color-#{$color}-base);
+    color: var(--rm-color-#{$color}-on-plus-1);
 
     &:visited {
       color: var(--rm-color-#{$color}-on-base);

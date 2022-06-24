@@ -1,7 +1,6 @@
 .flex
   .card--padded.flex.hand.gap-xs
     h2 Your Hand:
-    / TODO: Card but better CSS to allow for multiple in hand (ie more than 5)
     img.card-in-hand src='https://opengameart.org/sites/default/files/king_of_hearts2.png'
     img.card-in-hand src='https://opengameart.org/sites/default/files/king_of_hearts2.png'
     img.card-in-hand src='https://opengameart.org/sites/default/files/king_of_hearts2.png'
@@ -18,7 +17,7 @@
     p Josh didn't have Ace's! Scott, Go Fish!
 
 .flex
-  .flex-col.player-list 
+  .flex-col.one-third-width
     .card--padded
       h2 Who do you want to ask?
       .form__group
@@ -31,12 +30,15 @@
         input.form__radio#player_3 type='radio' name='player_selection'
         label.form__label for='player_3' Scott [5 books]
       
-  .card--padded.book-box
+  .card--padded.one-third-width
    h2 Your books: 
    p 2
+  .card--padded.current-player-box
+    h2 Current Player:
+    p Jeremy
 
 .flex
   .flex.flex-col.full-width
-    .flex.card--padded.ask-box 
-      a.btn--primary.btn--outline href='/game' Ask
+    .flex.justify-center.margin-y-lg
+      a.btn--primary href='/game' Ask
       
