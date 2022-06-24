@@ -1,6 +1,7 @@
 .hand {
   justify-content: left;
   width: 50%;
+  overflow-x: scroll;
 }
 
 .message-box {
@@ -8,6 +9,19 @@
   line-height: --rm-line-height-base;
 }
 
+.card-in-hand {
+  max-width: 10rem;
+}
+
 .player-list {
-  justify-content: left;
+  width: 50%;
+}
+
+.book-box {
+  width: 50%;
+}
+
+.ask-box {
+  justify-content: space-around;
+
 }
