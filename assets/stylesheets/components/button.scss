@@ -40,12 +40,13 @@
 
 // Theme Styles
 $button_varieties: 'primary', 'secondary', 'tertiary';
+
 @each $color in $button_varieties {
   .btn--#{$color} {
     @extend %btn;
 
-    background: var(--rm-color-#{$color}-base);
-    color: var(--rm-color-#{$color}-on-base);
+    background: var(--rm-color-#{$color}-minus-1);
+    color: var(--rm-color-#{$color}-on-minus-1);
 
     &:visited {
       color: var(--rm-color-#{$color}-on-base);

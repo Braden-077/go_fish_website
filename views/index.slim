@@ -1,5 +1,25 @@
-
 .flex.justify-center
-  .card.two-fifths-width
-    .card__body
-      h2 Games
+  .flex.flex-col
+    h2 Games
+    .flex.justify-end.margin-y-md
+      a.btn--primary href="/create_game" Create Game
+      div
+    .card
+      table.table
+        tbody.background-primary
+        thead
+          tr
+            th Game
+            th Status
+            th Number of Players
+          tr 
+            td 
+              a href='/game' Fun Game
+            td Waiting on more players... 
+            td 2/4 
+          tr 
+            td Awesome Game
+            td Playing... 
+            td 4/4
+
+      
