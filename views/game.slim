@@ -1,44 +1,42 @@
-.flex
-  .card--padded.flex.hand.gap-xs
-    h2 Your Hand:
-    img.card-in-hand src='https://opengameart.org/sites/default/files/king_of_hearts2.png'
-    img.card-in-hand src='https://opengameart.org/sites/default/files/king_of_hearts2.png'
-    img.card-in-hand src='https://opengameart.org/sites/default/files/king_of_hearts2.png'
-    img.card-in-hand src='https://opengameart.org/sites/default/files/king_of_hearts2.png'
-    img.card-in-hand src='https://opengameart.org/sites/default/files/king_of_hearts2.png'
-    img.card-in-hand src='https://opengameart.org/sites/default/files/king_of_hearts2.png'
-    img.card-in-hand src='https://opengameart.org/sites/default/files/king_of_hearts2.png'
-    img.card-in-hand src='https://opengameart.org/sites/default/files/king_of_hearts2.png'
-
+.box-wrapper.margin-y-md.margin-x-md
   .card--padded.message-box
     h2 Round Results:
     p Scott took your cards! 
     p Scott asked Josh for Ace's. 
     p Josh didn't have Ace's! Scott, Go Fish!
+.card--padded.hand.margin-x-md
+    h2.margin-right-md Your Hand:
+    img.card-in-hand src='https://opengameart.org/sites/default/files/king_of_hearts2.png'
+    img.card-in-hand src='https://opengameart.org/sites/default/files/king_of_hearts2.png'
+    img.card-in-hand src='https://opengameart.org/sites/default/files/king_of_hearts2.png'
+    img.card-in-hand src='https://opengameart.org/sites/default/files/king_of_hearts2.png'
+    img.card-in-hand src='https://opengameart.org/sites/default/files/king_of_hearts2.png'
+    img.card-in-hand src='https://opengameart.org/sites/default/files/king_of_hearts2.png'
+    img.card-in-hand src='https://opengameart.org/sites/default/files/king_of_hearts2.png'
+    img.card-in-hand src='https://opengameart.org/sites/default/files/king_of_hearts2.png'
 
-.flex
-  .flex-col.one-third-width
-    .card--padded
-      h2 Who do you want to ask?
-      .form__group
-        input.form__radio#player_1 type='radio' name='player_selection'
-        label.form__label for='player_1' Josh [2 books]
-      .form__group
-        input.form__radio#player_2 type='radio' name='player_selection'
-        label.form__label for='player_2' William [3 books]
-      .form__group
-        input.form__radio#player_3 type='radio' name='player_selection'
-        label.form__label for='player_3' Scott [5 books]
-      
-  .card--padded.one-third-width
-   h2 Your books: 
-   p 2
-  .card--padded.current-player-box
-    h2 Current Player:
+.flex.margin-x-md.margin-y-md
+  .card--padded.bottom-box-wrapper
+    h2.header-helper Who do you want to ask?
+    .form__group
+      input.form__radio#player_1 type='radio' name='player_selection'
+      label.form__label for='player_1' Josh [2 books]
+    .form__group
+      input.form__radio#player_2 type='radio' name='player_selection'
+      label.form__label for='player_2' William [3 books]
+    .form__group
+      input.form__radio#player_3 type='radio' name='player_selection'
+      label.form__label for='player_3' Scott [5 books]
+    
+  .card--padded.bottom-box-wrapper
+    h2.header-helper Your books: 
+    p 2
+  .card--padded.bottom-box-wrapper
+    h2.header-helper Current Player:
     p Jeremy
 
 .flex
   .flex.flex-col.full-width
-    .flex.justify-center.margin-y-lg
+    .flex.justify-center.margin-y-md
       a.btn--primary href='/game' Ask
       
